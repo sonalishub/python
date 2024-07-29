@@ -26,11 +26,12 @@ decode_list=string
 # decode_list=list(decode_list)
 print(decode_list)
 if (len(decode_list)>=3):
-    print(decode_list[3:])
-    removed_first_three=decode_list
-    print(removed_first_three[:-3])
-    # decode_list.pop(-1)
-    # print(decode_list)  
+    # print(decode_list[3:])
+    sliced_string=decode_list[3:-3]
+    print(f"this is removed string from the end {sliced_string}")
+    first_char=sliced_string.pop()
+
+  
     # if (len(decode_list)<=2):
 #     decode_list.reverse()
 #     decode_string=''.join(decode_list)
