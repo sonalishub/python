@@ -1,0 +1,20 @@
+char_list=input("enter any string: ")
+
+my_list=list(char_list)
+print(my_list)
+if (len(char_list)>=3):
+  first_char=my_list.pop(0)
+  my_list.append(first_char)
+  print(my_list)
+  my_list.append("abc")
+  print(my_list)
+  my_list.insert(0,"xyz")
+  print(my_list)
+  string=''.join(my_list)
+  print(string)
+elif (len(char_list)<=2):
+  my_list=list(char_list)
+  my_list.reverse()
+  print(my_list)   
+  string=''.join(my_list)
+  print(string)  
