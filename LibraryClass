@@ -1,0 +1,4 @@
+class Library:
+    def __init__(self,number_of_books):
+        self.number_of_books = number_of_books
+        self.books = []
