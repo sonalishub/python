@@ -1,4 +1,19 @@
 class Library:
-    def __init__(self,number_of_books):
-        self.number_of_books = number_of_books
+    def __init__(self,name):
+        self.name = name
         self.books = []
+
+    def add_books(self,book):
+        self.books.append(book)
+        print(f"Book added: {book}")
+
+    def remove_book(self,minus_book):
+        self.books.remove(minus_book) 
+        print(f"Book removed:  {minus_book}")
+        print(f"book added: {self.books}")
+
+
+library1 = Library("City Library")
+library1.add_books("the secret")
+library1.add_books("lol")
+library1.remove_book("the secret")
